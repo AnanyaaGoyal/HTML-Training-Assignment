@@ -40,17 +40,21 @@ form{
     margin-right: 10px;
 }
 .sidebar{
-    width:50px;
+    width: 205px;
     flex-flow: column nowrap;
     margin-top: 22.97px;
     margin-left: 32px;
 }
 .inditem{
     flex-flow: row nowrap;
-    display:inline-block;
+    display: inline-block;
     align-items: center;
-    margin-top:32px;
-   padding:10 60 12 17.5;
+    /* margin-top: 32px; */
+    padding: 10px 60px 12px 17.5px;
+    width: 168px;
+    /* padding-left: 20px; */
+    margin-bottom: 8px;
+    
 }
 
 .inditem img{
@@ -66,4 +70,165 @@ form{
 }
 .mainbody{
     margin-top: 19px;
+}
+.main-content{
+    flex-direction: row;
+}
+.main-center{
+    padding-left: 34px;
+    padding-top: 39px;
+    background-color: #FAFAFA;
+}
+#dashboard{
+    font-size: 30px;
+    font-family:Roboto;
+    font-weight: bold;
+}
+.content-2{
+    margin-top: 22.5px;
+    flex-direction:row;
+    margin-left:50px;
+    margin-right:20px;
+}
+.content-2item{
+    flex-direction:row;
+    display:flex;
+    background-color: #FFFFFF;
+    margin-right:30px;
+    padding:14px;
+}
+.innercontent{
+    display:inline;
+    
+}
+h3{
+    font-size: 25px;
+    margin: 0;
+}
+.innercontent p{
+    margin: 0;
+
+}
+.content-2item img{
+    margin-right: 12px;
+    width: 23px;
+}
+.active{
+    color:#C8242F;
+}
+.graph {
+    margin-top:30px;
+    margin-left: 53px;
+}
+h6{
+    font-size: 22px;
+}
+.freq-image{
+    width: 542px;
+    margin-left: 17px;
+}
+.graph-text{
+    margin-top:24px;
+    width: 562px;
+}
+.frequency{
+    background-color:#FFFFFF;
+    border-right: solid 15px #FAFAFA;
+    width: 611px;
+}
+.pie{
+    background-color: #FFFFFF;
+    width: 302px;
+}
+.sidetext{
+    font-size:12px;
+    color:#ADADAD;
+    padding-left: 28px;
+}
+.sidetextactive{
+    color:#C8242F;
+    font-size:12px;
+    padding-left: 28px;
+}
+.sale{
+    padding-left: 28px;
+}
+.pie h6{
+    margin-top:24px;
+    margin-left: 29px;
+}
+.pie img{
+    width: 151px;
+    margin-left: 55px;
+}
+.countries-stats{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.countries-stats p span{
+    font-size:15px;
+}
+
+.indicator {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.indicator-red {
+    background: #C8242F;
+}
+.indicator-green {
+    background: #A2B86C;
+}
+.indicator-orange {
+    background: #F16C20;
+}
+.indicator-yellow {
+    background: #EBC844;
+}
+.table-header{
+    margin-top:22.52px;
+}
+.data{
+    margin-top:30px;
+    padding-left:29px;
+    padding-right:29px;
+    margin-left: 50px;
+    width: 88%;
+    background-color:#FFFFFF;
+}
+
+.table-header h3{
+    font-size:22px !important;
+}
+.table-header p{
+    font-size:12x;
+    color:#C8242F;
+}
+.paid{
+color:#3CDD5F;
+background-color: #EBFFEF;
+font-size:15px;
+}
+.failed{
+color:#FF4545;
+background-color:#FFF5F5;
+font-size:15px;
+}
+.pending{
+    color:#BABABA;
+    background-color:#F8F8F8;
+    font-size:15px;
+}
+.table th{
+    font-size:15px;
+    color:#ADADAD;
+    font-weight:400;
+}
+.table td{
+    color:#3E3E3E;
+    font-size:15px;
 }
