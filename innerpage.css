@@ -36,7 +36,27 @@
 .main-content {
   flex-direction: row;
 }
+.left button .closeIcon  {
+  display: none;
+}
 
+.left button{
+  border:none;
+  background-color: white;
+}
+.menu {
+  transform: translateX(-200%);
+  display: none;
+  
+  /* / transition: transform 0.5s ease-in-out; / */
+}
+
+.showMenu {
+  display: block;
+  
+  transform: translateX(0);
+  /* / transition: transform 0.5s ease-in-out; / */
+}
 .sidebar {
   width: 205px;
   flex-flow: column nowrap;
@@ -183,6 +203,8 @@ input[type="radio"] {
   font-size: 18px;
 }
 .snackbar1 {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
   margin-inline: auto;
 }
@@ -317,6 +339,15 @@ input[type="radio"] {
     width: 152px;
   }
 }
+@media screen and (max-width: 936px) {
+  .form-check {
+    font-size: 12px;
+}
+.stacktxt{
+  font-size: 14px;
+}
+
+}
 @media screen and (max-width: 918px) {
   #emailHelp {
     font-size: 10px;
@@ -329,6 +360,23 @@ input[type="radio"] {
   }
   .stacktxt {
     font-size: 12px;
+  }
+  .form-check {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 887px){
+  .stacktxt {
+    font-size: 11px;
+  }
+  .main-center{
+    margin-left: 49px;
+  }
+  #right .col-2{
+    width: 24.666667%;
+  }
+  #onoff .col-2{
+    width: 24.666667%;
   }
 }
 @media screen and (max-width: 807px) {
@@ -352,3 +400,63 @@ input[type="radio"] {
     font-size: 13px;
   }
 }
+@media screen and (max-width: 780px){
+  .main-center {
+    margin-left: 24px;}
+    .para{
+      font-size: 13px;
+    }
+}
+@media screen and (max-width: 756px){
+  .main-center {
+    margin-left: -1px;}
+    
+}
+@media screen and (max-width: 735px){
+.main-center{
+  justify-content: center;
+  display:grid;
+}
+#analysis{
+  justify-content: center;
+   display: grid;
+
+}
+.profile {
+  margin-left: 20px;
+}
+.sidebar{
+  display:none;
+}
+.main-content{
+  justify-content: center;
+}
+}
+@media screen and (max-width: 600px){
+  .search{display:none;}
+  .logo{margin-right: 12px;}
+}
+@media screen and (max-width: 500px){
+ .name{display: none;}
+ .snackbar1 {
+  grid-template-columns: 1fr;
+  
+}
+#right .col-2 {
+  width: 33.666667%;
+}
+#onoff .col-2 {
+  width: 33.666667%;
+}
+}
+@media screen and (max-width: 400px){
+  .logo {
+    width: 134px;}
+    .profile {
+    
+      width: 38px;
+  }
+  .notif{
+    width: 23px;
+  }
+ }

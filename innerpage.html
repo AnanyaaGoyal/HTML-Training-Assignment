@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css\bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./innerpage.css">
 </head>
@@ -15,10 +16,14 @@
     <div class="flex-container mainbody">
         <div class="d-flex justify-content-between">
             <div class="left">
-                <img class="menu" src="images/menu-bar.svg" alt="">
-                <img class="logo" src="images/logo.svg" alt="'">
+                <button class="hamburger">
+                <img class=" menu-icon" src="images/menu-bar.svg" onclick="openCloseMenu()" alt="">
+                <i class="closeIcon material-icons" onclick="openCloseMenu()">close</i>
+            </button>
+                <img class="logo" src="images/logo.svg" alt="">
                 <img class="searchIcon" src="images/search-icon.svg" alt="">
-                <p class="search"> Search </p>
+                
+                <p class="search">Search</p>
             </div>
             <div class="right">
                 <img class="notif" src="images/notification-icon.svg" alt="">
@@ -29,7 +34,7 @@
             </div>
         </div>
         <div class="d-flex main-content">
-            <div class="d-flex sidebar">
+            <div class="menu sidebar">
                 <div class="d-flex inditem">
                     <img class="sidebaritems" src="images/dashboard-default.svg" alt="gxshg">
                     <p> Dashboard</p>
@@ -88,19 +93,19 @@
                 <!-- column 2 -->
                 <form class="twoColumn row">
                     <p id="twocol">Two Column</p>
-                    <div class="col-6 form-floating mb-3">
+                    <div class="col-md-6 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="Name" placeholder="Name">
                         <label for="Name">Name</label>
                     </div>
-                    <div class="col-6 form-floating mb-3">
+                    <div class="col-md-6 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="username" placeholder="Username">
                         <label for="username">Username</label>
                     </div>
-                    <div class="col-6 form-floating mb-3">
+                    <div class="col-md-6 col-sm-12 form-floating mb-3">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="Password">Password</label>
                     </div>
-                    <div class="col-6 form-floating mb-3">
+                    <div class="col-md-6 col-sm-12 form-floating mb-3">
                         <select class="form-select" id="autoSizingSelect">
                             <option selected>
                                 <p id="dropdown">Dropdown</p>
@@ -115,38 +120,38 @@
                 <!-- column 3 -->
                 <form class="threeColumn row">
                     <p id="threecol">Three Column</p>
-                    <div class="col form-floating mb-3">
+                    <div class="col-md-4 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="focus" placeholder="Focus">
                         <label for="focus">Focus</label>
                     </div>
-                    <div class="col form-floating mb-3">
+                    <div class="col-md-4 col-sm-12 form-floating mb-3">
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <label for="password">Password</label>
                     </div>
-                    <div class="col form-floating mb-3">
+                    <div class="col-md-4 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="disabled" placeholder="disabled">
                         <label for="disabled">Disabled</label>
                     </div>
                 </form>
                 <form class="fourColumn row">
                     <p id="fourcol">Four Column</p>
-                    <div class="col form-floating mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Designation">
                         <div id="emailHelp" class="form-text">Enter Valid Data.</div>
                         <label for="focus">Designation</label>
                     </div>
-                    <div class="col form-floating mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
                             placeholder="Name">
                         <div id="NameHelp" class="form-text">Enter your full Name as per ID.</div>
                         <label for="focus">Name</label>
                     </div>
-                    <div class="col form-floating mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 form-floating mb-3">
                         <input type="text" class="form-control" id="username" placeholder="Username">
                         <label for="username">Username</label>
                     </div>
-                    <div class="col form-floating mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 form-floating mb-3">
                         <select class="form-select" id="autoSizingSelect">
                             <option selected>
                                 <p id="dropdown">Select</p>
@@ -205,22 +210,22 @@
                     </div>
                     <div class="snackbar">
                         <p class="snacktitle">Snackbar</p>
-                        <div class="row snackbar1">
-                            <div class="col stack errorstack">
+                        <div class="snackbar1">
+                            <div class=" stack errorstack">
                                 <img class="stackimage" src="./images/error-icon.svg">
                                 <p class="stacktxt">This is an error message</p>
                             </div>
-                            <div class="col stack infostack">
+                            <div class=" stack infostack">
                                 <img class="stackimage" src="./images/info-icon.svg">
                                 <p class="stacktxt">This is an information message!</p>
-                            </div>
+                            
                         </div>
-                        <div class="row snackbar1">
-                            <div class="col stack warningstack">
+                        
+                            <div class=" stack warningstack">
                                 <img class="stackimage" src="./images/warning-icon.svg">
                                 <p class="stacktxt">This is a warning message</p>
                             </div>
-                            <div class="col stack successstack">
+                            <div class=" stack successstack">
                                 <img class="stackimage" src="./images/success-icon.svg">
                                 <p class="stacktxt">This is a success message!</p>
                             </div>
@@ -296,6 +301,6 @@
         </div>
     </div>
     <script src="./js/custom.js"></script>
-
+<script src="./js/menu.js"></script>
     </body>
 </html>
